@@ -1,0 +1,17 @@
+# Author: Anthony Yalong
+
+# platformio
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ide
+.vscode/
+
+# esp-idf build
+build/
+sdkconfig
+sdkconfig.esp32dev
+
+# os generated
+.DS_Store
