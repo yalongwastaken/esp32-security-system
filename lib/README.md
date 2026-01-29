@@ -1,1 +1,0 @@
-This directory is intended for project specific (private) libraries.
