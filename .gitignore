@@ -1,17 +1,19 @@
 # Author: Anthony Yalong
 
-# platformio
-.pio/
-.pioenvs/
-.piolibdeps/
-
 # ide
-.vscode/
+**/.vscode
 
 # esp-idf build
 build/
 sdkconfig
+sdkconfig.old
 sdkconfig.esp32dev
+*.pyc
+dependencies.lock
+managed_components/
+
+# compilation database
+compile_commands.json
 
 # os generated
 .DS_Store
