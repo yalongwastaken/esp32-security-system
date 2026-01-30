@@ -18,6 +18,8 @@ typedef struct {
     gpio_num_t pin_num;        // gpio pin number
     bool last_state;           // previous state for edge detection
     uint32_t motion_count;     // total motion events detected
+    uint32_t debounce_ms;      // debounce time in milliseconds
+    int64_t last_trigger_time; // last motion detection time (microseconds)
 } pir_sensor_t;
 
 /**
