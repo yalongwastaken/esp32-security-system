@@ -7,10 +7,11 @@
 // imports
 #include <driver/gpio.h>
 #include <esp_err.h>
-#include <esp_log.h>
 
 // pin configuration
-#define PIR_GPIO_PIN GPIO_NUM_13     // pin 13
+#define PIR_GPIO_PIN        GPIO_NUM_13
+#define HCSR04_PIN_TRIG     GPIO_NUM_12
+#define HCSR04_PIN_ECHO     GPIO_NUM_14
 
 // system parameters
 #define PIR_DEBOUNCE_TIME_MS 50
