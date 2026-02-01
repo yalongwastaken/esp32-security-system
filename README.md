@@ -8,7 +8,7 @@ Multi-sensor security monitoring system built with ESP32 and ESP-IDF, demonstrat
 
 ### Current Progress
 - [x] Project setup and architecture
-- [ ] PIR motion sensor driver
+- [x] PIR motion sensor driver
 - [ ] HC-SR04 ultrasonic driver
 - [ ] DHT11 temperature/humidity driver
 - [ ] LCD1602 I2C display driver
