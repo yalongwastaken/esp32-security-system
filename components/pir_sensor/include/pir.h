@@ -27,9 +27,10 @@ typedef struct {
  * 
  * @param pir Pointer to PIR sensor structure
  * @param pin GPIO pin number for PIR sensor output
+ * @param debounce_time Debounce interval in milliseconds to filter spurious or repeated motion triggers
  * @return esp_err_t ESP_OK on success, ESP_ERR_INVALID_ARG if pir is NULL
  */
-esp_err_t pir_init(pir_sensor_t *pir, gpio_num_t pin);
+esp_err_t pir_init(pir_sensor_t *pir, gpio_num_t pin, uint32_t debounce_time);
 
 /**
  * @brief Read PIR sensor and detect motion events

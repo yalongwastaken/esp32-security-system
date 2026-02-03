@@ -18,7 +18,7 @@
 #define TASK_DELAY 100      // 100ms task delay
 #define TEST_LED GPIO_NUM_2 // built in LED
 #define PIR_MOTION_COUNT_MAX 10
-#define STACK_DEPTH 4096    // safe stack depth for testing
+#define TASK_STACK_DEPTH 4096    // safe stack depth for testing
 #define TASK_PRIORITY 5     // safe task priority for testing
 
 // logging
@@ -51,7 +51,7 @@ void app_main(void) {
     pir_sensor_last_value = false;
 
     // initalize pir 
-    ret = pir_init(&pir_sensor, PIR_GPIO_PIN);
+    ret = pir_init(&pir_sensor, PIR_GPIO_PIN, PIR_DEBOUNCE_TIME_MS);
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "failed to initialize pir sensor");
         return;
@@ -61,7 +61,7 @@ void app_main(void) {
     xTaskCreate(
         test_pir_sensor,
         "test_pir_sensor",
-        STACK_DEPTH,
+        TASK_STACK_DEPTH,
         NULL,
         TASK_PRIORITY,
         NULL

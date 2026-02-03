@@ -6,11 +6,12 @@
 
 #include "pir.h"
 #include "esp_log.h"
+#include "driver/gpio.h"
 #include "esp_timer.h"
 
 static const char *TAG = "PIR";
 
-esp_err_t pir_init(pir_sensor_t *pir, gpio_num_t pin) {
+esp_err_t pir_init(pir_sensor_t *pir, gpio_num_t pin, uint32_t debounce_time) {
     // logging
     esp_err_t ret;
 
@@ -38,7 +39,7 @@ esp_err_t pir_init(pir_sensor_t *pir, gpio_num_t pin) {
     pir->pin_num = pin;
     pir->last_state = false;
     pir->motion_count = 0;
-    pir->debounce_ms = 50;
+    pir->debounce_ms = debounce_time;
     pir->last_trigger_time = 0;
 
     ESP_LOGI(TAG, "pir initialized");
