@@ -16,7 +16,7 @@
 #define PIR_GPIO_PIN        GPIO_NUM_13
 #define HCSR04_PIN_TRIG     GPIO_NUM_12
 #define HCSR04_PIN_ECHO     GPIO_NUM_14
-#define DHT11_PIN           GPIO_NUM_27
+#define DHT11_GPIO_PIN      GPIO_NUM_27
 
 // pir parameters
 #define PIR_DEBOUNCE_TIME_MS 50
