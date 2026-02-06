@@ -16,7 +16,7 @@ esp_err_t hcsr04_init(hcsr04_sensor_t *sensor, gpio_num_t trig_pin, gpio_num_t e
     // error management
     esp_err_t ret;
     
-    // base case
+    // sanity check
     if (sensor == NULL) {
         ESP_LOGE(TAG, "hcsr04 sensor pointer is null");
         return ESP_ERR_INVALID_ARG;
