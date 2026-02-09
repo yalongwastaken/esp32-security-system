@@ -12,7 +12,7 @@ Standalone test programs for individual component validation.
 
 ## Test Files
 
-- `test_pir_manual.c` - PIR motion sensor validation
-- `test_hcsr04_manual.c` - Ultrasonic distance measurement
-- `test_dht11_manual.c` - Temperature/humidity reading
-- `test_lcd_manual.c` - LCD display functionality
+- `test_pir_sensor.c` - PIR motion sensor validation
+- `test_hcsr04_sensor.c` - Ultrasonic distance measurement
+- `test_dht11_sensor.c` - Temperature/humidity reading
+- `test_lcd_i2c.c` - LCD display functionality
