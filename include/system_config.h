@@ -26,10 +26,11 @@
 #define DHT11_GPIO_PIN      GPIO_NUM_27
 
 // i2c Configuration
-#define I2C_MASTER_SCL_PIN      GPIO_NUM_22
-#define I2C_MASTER_SDA_PIN      GPIO_NUM_21
+#define I2C_MASTER_SCL_IO       GPIO_NUM_22
+#define I2C_MASTER_SDA_IO       GPIO_NUM_21
 #define I2C_MASTER_NUM          I2C_NUM_0
 #define I2C_MASTER_FREQ_HZ      100000
+#define I2C_MASTER_TIMEOUT_MS   1000
 
 // lcd Configuration
 #define LCD_ADDR                0x27

@@ -70,10 +70,6 @@ void app_main(void) {
     );
 }
 
-void test_hcsr04_sensor(void *pvParameters) {
-
-}
-
 esp_err_t led_init(void) {
     // error management
     esp_err_t ret;
