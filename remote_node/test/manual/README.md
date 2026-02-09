@@ -12,4 +12,4 @@ Standalone test programs for individual component validation.
 
 ## Test Files
 
-- `test_pir_manual.c` - PIR motion sensor validation
+- `test_pir_sensor.c` - PIR motion sensor validation
