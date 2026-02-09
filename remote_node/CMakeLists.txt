@@ -8,4 +8,4 @@ set(EXTRA_COMPONENT_DIRS components)
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 
 # project name
-project(esp32-security-system)
+project(esp32-remote-node)
