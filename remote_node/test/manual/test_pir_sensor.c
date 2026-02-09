@@ -10,7 +10,7 @@
 #include "pir.h"
 #include "esp_log.h"
 #include "driver/gpio.h"
-#include "system_config.h"
+#include "remote_node_system_config.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
