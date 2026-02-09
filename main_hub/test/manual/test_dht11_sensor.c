@@ -8,7 +8,7 @@
 
 // imports
 #include "dht11.h"
-#include "system_config.h"
+#include "main_hub_system_config.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"

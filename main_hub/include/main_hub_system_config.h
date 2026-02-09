@@ -5,8 +5,8 @@
  *        timing constants for connected sensors.
  */
 
-#ifndef SYSTEM_CONFIG_H
-#define SYSTEM_CONFIG_H
+#ifndef MAIN_HUB_SYSTEM_CONFIG_H
+#define MAIN_HUB_SYSTEM_CONFIG_H
 
 // imports
 #include <driver/gpio.h>
@@ -37,4 +37,4 @@
 #define LCD_COLUMNS             16
 #define LCD_ROWS                2
 
-#endif  // SYSTEM_CONFIG_H
+#endif  // MAIN_HUB_SYSTEM_CONFIG_H

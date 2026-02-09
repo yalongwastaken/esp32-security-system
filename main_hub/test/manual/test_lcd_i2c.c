@@ -7,7 +7,7 @@
 
 // imports
 #include "lcd_i2c.h"
-#include "system_config.h"
+#include "main_hub_system_config.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/i2c.h"
