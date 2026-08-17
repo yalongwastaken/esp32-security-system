@@ -8,7 +8,7 @@ The goal is a real distributed embedded system rather than a single-board demo: 
 independent firmware images, sensor drivers written from datasheets, FreeRTOS task
 scheduling with mutex-protected shared state, and a BLE GATT link between nodes.
 
-## System Architecture
+## Architecture
 
 ### Main Hub — ESP32 #1
 Central monitoring node.
@@ -60,7 +60,7 @@ used by one node stay under that node.
 
 - [docs/architecture.md](docs/architecture.md) — task model, scheduling, concurrency, and bus details.
 
-## Hardware Requirements
+## Requirements
 
 **Main hub** — ESP32-WROOM-32 · HC-SR501 PIR · HC-SR04 ultrasonic · DHT11 ·
 LCD1602 with PCF8574 I²C backpack · breadboard and jumpers · 5V/3.3V supply
@@ -85,7 +85,7 @@ LCD1602 with PCF8574 I²C backpack · breadboard and jumpers · 5V/3.3V supply
 |------------|-----------|------|
 | PIR sensor | IN        | 13   |
 
-## Building and Flashing
+## Build and Flash
 
 ```bash
 # Main hub
