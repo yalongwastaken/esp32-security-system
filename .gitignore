@@ -17,3 +17,6 @@ compile_commands.json
 
 # os generated
 .DS_Store
+
+# local working notes
+CLAUDE.md
